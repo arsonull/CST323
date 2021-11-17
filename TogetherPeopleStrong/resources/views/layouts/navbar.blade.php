@@ -1,6 +1,6 @@
 <nav style="background-color: white;"class="navbar navbar-light navbar-expand-md navigation-clean-button border border-dark">
     <div class="container"><a class="navbar-brand" href="{{ url('/home') }}">
-	<img style="height:50px; width:100px; margin-right:25px;" alt="TogetherPeopleStrong" src="/TogetherPeopleStrong/resources/img/logo.png">
+	<img style="height:50px; width:100px; margin-right:25px;" alt="TogetherPeopleStrong" src="/resources/img/logo.png">
     {{ config('Together People Strong', 'Together People Strong') }}
     </a>
         <div class="collapse navbar-collapse" id="navcol-1">
@@ -13,10 +13,10 @@
                     	<li class="nav-item"><a class="btn btn-light action-button" role="button" href="{{ route('register') }}">{{ __('Register') }}</a></li>
                     @endif
                     @else
-                        <li class="nav-item"><a class="nav-link active" href="/TogetherPeopleStrong/portfolio/create">Manage Portfolio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/TogetherPeopleStrong/portfolio/viewAll">Portfolios</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/TogetherPeopleStrong/affinities">Affinity Groups</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/TogetherPeopleStrong/job_postings">Jobs</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="/portfolio/create">Manage Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/portfolio/viewAll">Portfolios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/affinities">Affinity Groups</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/job_postings">Jobs</a></li>
         		</ul>
     		</div>
             <div class="d-flex justify-content-end navbar-text actions">
@@ -26,7 +26,7 @@
                             document.getElementById('logout-form').submit();">
                             {{ __('Logout') }}
                         </a>
-                    <a  class="nav-link btn btn-light" href="/TogetherPeopleStrong/editUserInfo" role="button">
+                    <a  class="nav-link btn btn-light" href="/editUserInfo" role="button">
                         {{ Auth::user()->name }} 
                     </a>
 <!--             	</span> -->
